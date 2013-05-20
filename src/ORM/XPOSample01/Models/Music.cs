@@ -90,7 +90,7 @@ namespace XPOSample01.Models
     /// <returns>文字列表現</returns>
     public override string ToString()
     {
-      return string.Format("Title=[{0}], ArtistName=[{1}]", Title, ArtistName);
+      return string.Format("タイトル=[{0}], アーティスト=[{1}]", Title, ArtistName);
     }
   }
 }
