@@ -84,6 +84,10 @@ namespace XPOSample01.Models
       }
     }
 
+    /// <summary>
+    /// オブジェクトの文字列表現を取得します。
+    /// </summary>
+    /// <returns>文字列表現</returns>
     public override string ToString()
     {
       return string.Format("Title=[{0}], ArtistName=[{1}]", Title, ArtistName);
