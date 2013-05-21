@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6c9c0556-132d-492f-8b40-63d777af69b8" namespace="XPOSample02.Models" dataBaseShemaInfo="H4sIAAAAAAAEAIVQXUvDQBB8L/gfjjzHu0usNJYkBRsVsUKhRXzdJNv08HJX7i4f/nvTVoXUB992Z2eY2YkXfS1Ji8YKrRIvoNxbpFeT+B4sbpw2UOGz2mkysJSd91Yk3t65w5yxrutod0O1qVjIecDeX1ebYo81XAtlHagCvV9V+b/KG1wJibeQS7QnS3ZGjimwXBtdjOC3c+Q0w/ahPxi0lmbggLZBSEOffJ+T40Yjyn2ybKRrDCYKG2dA+mTd5FIUL/i51R+okjyKymB2Oy1nnOP0DmL2Y3Hye0KFBhwudV2jcjbdgbQYsz/4iJ2hFdUwPorhq0vJ+DiUzi5aT78ArjqATZ4BAAA=" generateStoredProcedures="false" fieldNameCase="withLowercase" fieldNamePrefix="_" xmlns="http://www.w3.org/1999/xhtml">
+  <classes>
+    <dataBaseObjectModelHasClasses Id="753a53c4-10dd-41e5-8dfe-b23b19df6f46">
+      <xpObject Id="1034521b-68e2-470b-9d9d-4aceea504ae5" name="Music" baseClass="XPObject" userFileName="Music" designerFileName="Music.Designer" className="Music" virtualName="Music">
+        <fields>
+          <generalXpObjectHasFields Id="4401f110-71c1-4b0f-a711-e9f3324eec1f">
+            <field Id="4ad1935e-2ebd-4361-98ae-d7048c34ed27" name="Title" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ac3001ed-466a-4b28-812e-48a4bb3e8625">
+            <field Id="f01a914d-fdf3-4e83-8a75-62291f9421ca" name="ArtistName" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

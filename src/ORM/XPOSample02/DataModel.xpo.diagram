@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visualDesignerDiagram dslVersion="1.0.0.0" Id="4769702f-a362-4a9f-847c-e359364181d3" absoluteBounds="0, 0, 11, 8.5" name="DataModel">
+  <dataBaseObjectModelMoniker Id="6c9c0556-132d-492f-8b40-63d777af69b8" />
+  <nestedChildShapes>
+    <xpObjectShape Id="d99272cf-8e56-4a33-a444-01081c8dd1aa" absoluteBounds="2.7708332538604736, 2.875, 1.5, 1.265845540364583">
+      <xpObjectMoniker Id="1034521b-68e2-470b-9d9d-4aceea504ae5" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7fa5b4a4-1d64-4808-a7bc-4349921d7fca" absoluteBounds="2.7858332538604738, 3.185, 1.4700000000000002, 0.60771687825520826" name="Fields" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0a9f1f98-e82d-4278-a87a-9cdb6d0bb705" absoluteBounds="2.7858332538604738, 3.8027168782552083, 1.4700000000000002, 0.238128662109375" name="Indexes" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </xpObjectShape>
+  </nestedChildShapes>
+</visualDesignerDiagram>
