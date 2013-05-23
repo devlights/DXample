@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿/////////////////////////////////////////////////////////////////////
+//
+// XPOSample03 -- XpoDefault.DataLayerでデフォルトデータレイヤを設定
+// 
+/////////////////////////////////////////////////////////////////////
 namespace XPOSample03
 {
+  using System;
+  using System.Collections.Generic;
+  using System.Linq;
+
+  using DevExpress.Xpo;
+  
   class Program
   {
-    static void Main(string[] args)
+    static void Main()
     {
     }
   }
