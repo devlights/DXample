@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>927e11c7-009d-4ec7-a926-e5c3e58625ea</ProjectGuid>
+    <ProjectGuid>{1027AC8C-8DE8-4CE7-A32C-BF1095EF6DAE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>XPOSample04</RootNamespace>
