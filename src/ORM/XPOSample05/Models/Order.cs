@@ -40,6 +40,7 @@ namespace XPOSample05.Models
       }
     }
 
+    // 1側のオブジェクトを取得
     [Association("Customer-Orders")]
     public Customer Customer
     {

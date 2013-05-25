@@ -39,6 +39,7 @@ namespace XPOSample05.Models
       }
     }
 
+    // 多側のオブジェクトを取得
     [Association("Customer-Orders")]
     public XPCollection<Order> Orders
     {
