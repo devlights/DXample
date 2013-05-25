@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////
 //
-// XPOSample04 -- XpoProviderTypeString
+// XPOSample05 -- Relation One-to-Many
 // 
 /////////////////////////////////////////////////////////////////////
 namespace XPOSample05
@@ -57,6 +57,9 @@ namespace XPOSample05
       // これで関連が定義できた。後は、実行時にCustomerオブジェクトを取得すると
       // Ordersプロパティから、紐付くOrderが取得できる。
       // また、Orderオブジェクトからは、紐付くCustomerオブジェクトが取得できる。
+      //
+      // [参考URL]
+      // http://documentation.devexpress.com/#XPO/CustomDocument2257
       //
       XpoDefault.DataLayer = new SimpleDataLayer(new InMemoryDataStore());
       XpoDefault.Session   = null;
