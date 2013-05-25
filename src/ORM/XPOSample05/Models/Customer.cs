@@ -1,4 +1,4 @@
-﻿namespace XPOSample05.Models
+namespace XPOSample05.Models
 {
   using System;
   using System.Collections.Generic;
