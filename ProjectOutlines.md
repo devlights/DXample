@@ -6,4 +6,4 @@
   * XPOSample02 -- Data Model Wizardの利用
   * XPOSample03 -- XpoDefault.DataLayerでデフォルトデータレイヤ
   * XPOSample04 -- XpoProviderTypeString
-  * XPOSample05 -- Relation One-to-Many
+  * XPOSample05 -- Relation One-to-Many ==> (v0.0.1)
