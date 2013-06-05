@@ -3,7 +3,7 @@
 // XPOSample02 -- Data Model Wizardの利用
 // 
 ///////////////////////////////////////////////////////
-namespace XPOSample02
+namespace DXample.XPOSample02
 {
   using System;
   using System.Collections.Generic;

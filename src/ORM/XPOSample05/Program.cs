@@ -3,7 +3,7 @@
 // XPOSample05 -- Relation One-to-Many
 // 
 /////////////////////////////////////////////////////////////////////
-namespace XPOSample05
+namespace DXample.XPOSample05
 {
   using System;
   using System.Collections.Generic;

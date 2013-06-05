@@ -3,7 +3,7 @@
 // XPOSample04 -- XpoProviderTypeString
 // 
 /////////////////////////////////////////////////////////////////////
-namespace XPOSample04
+namespace DXample.XPOSample04
 {
   using System;
   using System.Collections.Generic;

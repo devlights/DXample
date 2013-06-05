@@ -7,7 +7,7 @@
     <ProjectGuid>{73B8AC28-FE45-4A2D-9EC9-34E222C6E394}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XPOSample05</RootNamespace>
+    <RootNamespace>DXample.XPOSample05</RootNamespace>
     <AssemblyName>XPOSample05</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

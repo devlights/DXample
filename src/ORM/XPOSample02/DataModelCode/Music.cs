@@ -1,7 +1,7 @@
 using System;
 using DevExpress.Xpo;
 using DevExpress.Data.Filtering;
-namespace XPOSample02.Models
+namespace DXample.XPOSample02.Models
 {
 
   public partial class Music
