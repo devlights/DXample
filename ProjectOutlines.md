@@ -8,3 +8,4 @@
   * XPOSample04 -- XpoProviderTypeString
   * XPOSample05 -- Relation One-to-Many ==> (v0.0.1)
   * XPOSample06 -- Criteriaの構築（基本系)
+  * XPOSample07 -- NestedUnitOfWorkの基本的な利用方法
