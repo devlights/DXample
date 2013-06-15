@@ -1,4 +1,4 @@
-namespace DXample.XPOSample05.Models
+﻿namespace DXample.XPOSample06.Models
 {
   using System;
   using System.Collections.Generic;
@@ -11,7 +11,7 @@ namespace DXample.XPOSample05.Models
     private int _age;
     private string _name;
 
-    public Customer(Session session) : base(session)
+    public Customer(Session sess) : base(sess)
     {
     }
 
@@ -36,16 +36,6 @@ namespace DXample.XPOSample05.Models
       set
       {
         SetPropertyValue("Age", ref _age, value);
-      }
-    }
-
-    // 多側のオブジェクトを取得
-    [Association("Customer-Orders")]
-    public XPCollection<Order> Orders
-    {
-      get
-      {
-        return GetCollection<Order>("Orders");
       }
     }
   }

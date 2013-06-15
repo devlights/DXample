@@ -3,7 +3,7 @@
 // XPOSample01 -- 基本的なXPOクラスの作成
 // 
 ///////////////////////////////////////////////////////
-namespace XPOSample01
+namespace DXample.XPOSample01
 {
   //
   // Framework namespace.

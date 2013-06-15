@@ -3,7 +3,7 @@
 // XPOSample03 -- XpoDefault.DataLayerでデフォルトデータレイヤを設定
 // 
 /////////////////////////////////////////////////////////////////////
-namespace XPOSample03
+namespace DXample.XPOSample03
 {
   using System;
   using System.Collections.Generic;
