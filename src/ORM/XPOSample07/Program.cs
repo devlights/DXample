@@ -1,4 +1,4 @@
-namespace XPOSample07
+namespace DXample.XPOSample07
 {
   using System;
   using System.Collections.Generic;

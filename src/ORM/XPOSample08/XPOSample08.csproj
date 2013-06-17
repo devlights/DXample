@@ -7,7 +7,7 @@
     <ProjectGuid>{FD2D91A9-EA95-49E4-BB0A-D7AD8413051B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XPOSample08</RootNamespace>
+    <RootNamespace>DXample.XPOSample08</RootNamespace>
     <AssemblyName>XPOSample08</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
