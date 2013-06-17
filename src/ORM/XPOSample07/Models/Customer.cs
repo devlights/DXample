@@ -1,4 +1,4 @@
-﻿namespace DXample.XPOSample07.Models
+namespace DXample.XPOSample07.Models
 {
   using System;
   using System.Collections.Generic;

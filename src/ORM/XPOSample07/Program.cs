@@ -15,26 +15,26 @@ namespace XPOSample07
     static void Main()
     {
       //
-      // XPO�ɂ́ANestedUnitOfWork�Ƃ����N���X�����݂���B
-      // ���̃N���X�́A�����ʂ�l�X�g����UOW�������B
-      //�i�T�u�g�����U�N�V�����̂悤�ȃC���[�W�j
+      // XPOには、NestedUnitOfWorkというクラスが存在する。
+      // このクラスは、文字通りネストしたUOWを示す。
+      //（サブトランザクションのようなイメージ）
       // 
-      // NestedUnitOfWork���ŃR�~�b�g���ꂽ�ύX��
-      // �e��UOW�ɂăR�~�b�g����Ȃ�����A�m�肵�Ȃ��B
-      // ����́A�ʂ�UOW����͕ύX�������Ȃ��Ƃ����Ӗ��ł���
-      // �e��UOW�����NestedUnitOfWork�̕ύX�͌�����B
+      // NestedUnitOfWork内でコミットされた変更は
+      // 親のUOWにてコミットされない限り、確定しない。
+      // これは、別のUOWからは変更が見えないという意味であり
+      // 親のUOWからはNestedUnitOfWorkの変更は見える。
       //
-      // �T�O�I�ɂ́ADB�̃g�����U�N�V������TransactionScope�Ɠ����B
+      // 概念的には、DBのトランザクションやTransactionScopeと同じ。
       //
-      // ��ʂɂĕʉ�ʂ��J���āA�f�[�^��ҏW���Ă܂��߂��Ă���ꍇ�Ȃǂɗ��p�ł���B
-      // (Tutorial 4�͂��̃p�^�[�����������Ă���Ă���B�j
+      // 画面にて別画面を開いて、データを編集してまた戻ってくる場合などに利用できる。
+      // (Tutorial 4はそのパターンを実装してくれている。）
       //
-      // NestedUnitOfWork���ł́A�I�u�W�F�N�g��e��UOW�Ɩ��m�ɕ����Ď擾���邱�Ƃ��o����B
-      //   �EGetNestedObject
-      // �܂��ANestedUnitOfWork���Őe����UOW����I�u�W�F�N�g���擾���邱�Ƃ��o����B
-      //   �EGetParentObject
+      // NestedUnitOfWork内では、オブジェクトを親のUOWと明確に分けて取得することが出来る。
+      //   ・GetNestedObject
+      // また、NestedUnitOfWork内で親側のUOWからオブジェクトを取得することも出来る。
+      //   ・GetParentObject
       //
-      // [�Q�l���\�[�X]
+      // [参考リソース]
       //   http://documentation.devexpress.com/#XPO/CustomDocument2260
       //   http://documentation.devexpress.com/#XPO/CustomDocument2113
       //
@@ -42,7 +42,7 @@ namespace XPOSample07
       XpoDefault.Session   = null;
 
       //
-      // �����f�[�^����.
+      // 初期データ生成.
       //
       using (var uow = new UnitOfWork())
       {
@@ -57,7 +57,7 @@ namespace XPOSample07
       }
 
       //
-      // NestedUnitOfWork���쐬���ĐeUOW���R�~�b�g���Ă��Ȃ���Ԃł̒l���m�F.
+      // NestedUnitOfWorkを作成して親UOWがコミットしていない状態での値を確認.
       //
       var criteria = CriteriaOperator.Parse("Age = 33");
 
@@ -75,14 +75,14 @@ namespace XPOSample07
         Console.WriteLine(theCustomer.Name);
 
         //
-        // �킴�Ɛe��UOW�ł�CommitChanges���Ă΂��ɏ����I��.
+        // わざと親のUOWではCommitChangesを呼ばずに処理終了.
         //
-        // �ȉ��̃R�����g���O���ƁA�ύX���m�肳��A�ʂ�UOW�ł��ύX��������悤�ɂȂ�.
+        // 以下のコメントを外すと、変更が確定され、別のUOWでも変更が見えるようになる.
         //uow.CommitChanges();
       }
 
       //
-      // �ʂ�UOW�ōēx�����������w�肵�Ēl���m�F.
+      // 別のUOWで再度同じ条件を指定して値を確認.
       //
       using (var uow = new UnitOfWork())
       {
@@ -103,14 +103,14 @@ namespace XPOSample07
         }
 
         //
-        // NestedUnitOfWork���ŃR�~�b�g�i�܂�q�̃g�����U�N�V�����j���s�����ɂ��
-        // �e���̃I�u�W�F�N�g�̒l���ύX��ԂƂȂ�B
-        // �������A���̕ύX�͐e���̃g�����U�N�V�����ɂĖ��R�~�b�g�ƂȂ��Ă���̂�
-        // �����[�h���邩�A���̂܂�UOW���R�~�b�g�����ɏI�����邱�Ƃɂ��ύX���j�������B
+        // NestedUnitOfWork側でコミット（つまり子のトランザクション）を行う事により
+        // 親側のオブジェクトの値も変更状態となる。
+        // しかし、この変更は親側のトランザクションにて未コミットとなっているので
+        // リロードするか、そのままUOWをコミットせずに終了することにより変更が破棄される。
         //
-        // �����I�ɐe�I�u�W�F�N�g�̒l�����ɖ߂��ɂ́A�����[�h�������s���K�v������B
+        // 強制的に親オブジェクトの値を元に戻すには、リロード処理を行う必要がある。
         //   Session.Reload, Session.DropIdentityMap
-        // �������́A�ēx���������ŃI�u�W�F�N�g���擾������.
+        // もしくは、再度同じ条件でオブジェクトを取得し直す.
         //
         Console.WriteLine(parentCustomer.Name);
         uow.Reload(parentCustomer);
@@ -119,7 +119,7 @@ namespace XPOSample07
       }
 
       //
-      // �ʂ�UOW�ōēx�����������w�肵�Ēl���m�F.
+      // 別のUOWで再度同じ条件を指定して値を確認.
       //
       using (var uow = new UnitOfWork())
       {
