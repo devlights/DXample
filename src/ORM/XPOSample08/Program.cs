@@ -14,7 +14,11 @@ namespace DXample.XPOSample08
   {
     static void Main()
     {
+      //
       // XPView
+      //
+      XpoDefault.DataLayer = XpoDefault.GetDataLayer(MSSqlCEConnectionProvider.GetConnectionString("XPOSample08.sdf"), AutoCreateOption.DatabaseAndSchema);
+      XpoDefault.Session   = null;
     }
   }
 }
