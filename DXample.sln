@@ -36,6 +36,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXample.Server", "src\Serve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXample.Server.UI", "src\Server\DXample.Server.UI\DXample.Server.UI.csproj", "{144670CB-6396-488C-A76D-2E03A3B69E78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXample.Server.Tests", "src\Server\DXample.Server.Tests\DXample.Server.Tests.csproj", "{05630D66-821C-4E3D-A09F-3040E0BC8ED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{164E13AF-0F10-41BF-88A2-2B7A7B368E6C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +93,10 @@ Global
 		{144670CB-6396-488C-A76D-2E03A3B69E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{144670CB-6396-488C-A76D-2E03A3B69E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{144670CB-6396-488C-A76D-2E03A3B69E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,5 +113,6 @@ Global
 		{E07D3DD4-3409-44FF-8CE5-D8E8D5581E34} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
 		{7C14DD34-3878-4C36-BB2F-D35491C65CCD} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
 		{144670CB-6396-488C-A76D-2E03A3B69E78} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
+		{05630D66-821C-4E3D-A09F-3040E0BC8ED5} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
 	EndGlobalSection
 EndGlobal
