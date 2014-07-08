@@ -43,6 +43,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{164E13
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DXample.WinForms.SimpleButtonSample", "src\WinForms\DXample.WinForms.SimpleButtonSample\DXample.WinForms.SimpleButtonSample.csproj", "{62E83AF0-691C-4271-82FC-466701A6BA9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05630D66-821C-4E3D-A09F-3040E0BC8ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E83AF0-691C-4271-82FC-466701A6BA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E83AF0-691C-4271-82FC-466701A6BA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E83AF0-691C-4271-82FC-466701A6BA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E83AF0-691C-4271-82FC-466701A6BA9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -114,5 +120,6 @@ Global
 		{7C14DD34-3878-4C36-BB2F-D35491C65CCD} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
 		{144670CB-6396-488C-A76D-2E03A3B69E78} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
 		{05630D66-821C-4E3D-A09F-3040E0BC8ED5} = {025A6A8E-8722-4AA2-8321-67F60D8E6F78}
+		{62E83AF0-691C-4271-82FC-466701A6BA9F} = {9CB29034-A505-48CA-8D95-C42087F1FFBD}
 	EndGlobalSection
 EndGlobal
