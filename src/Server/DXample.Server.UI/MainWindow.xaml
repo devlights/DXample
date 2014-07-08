@@ -10,7 +10,7 @@
   Height="189.497" 
   Width="336.538" 
   ResizeMode="NoResize" 
-  Loaded="DXWindow_Loaded">
+  Loaded="DXWindow_Loaded" Closing="DXWindow_Closing">
   <Grid>
     <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Click="btnStart_Click"/>
     <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="167,10,0,0" VerticalAlignment="Top" Width="150" Click="btnStop_Click"/>
