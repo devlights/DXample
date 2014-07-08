@@ -1,0 +1,20 @@
+﻿<dx:DXWindow
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+  xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+  xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+  x:Class="DXample.Server.UI.MainWindow"
+  dx:ThemeManager.ThemeName="Office2013"
+  Title="DXample DataService" 
+  Height="189.497" 
+  Width="336.538" 
+  ResizeMode="NoResize" 
+  Loaded="DXWindow_Loaded">
+  <Grid>
+    <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" Click="btnStart_Click"/>
+    <Button x:Name="btnStop" Content="Stop" HorizontalAlignment="Left" Margin="167,10,0,0" VerticalAlignment="Top" Width="150" Click="btnStop_Click"/>
+    <dxe:SpinEdit x:Name="speNumberOfEmployees" HorizontalAlignment="Left" Margin="148,39,0,0" VerticalAlignment="Top" Width="169" EditValue="{Binding NumberOfEmployees}" MaxValue="1000000" MinValue="1"/>
+    <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Number of Employess:" VerticalAlignment="Top"/>
+  </Grid>
+</dx:DXWindow>
