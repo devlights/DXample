@@ -1,5 +1,3 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/hnpckdhst42x2qen)](https://ci.appveyor.com/project/devlights/dxample)
-
 DXample
 =======
 
